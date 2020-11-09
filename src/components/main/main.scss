@@ -1,0 +1,21 @@
+.item-people {
+    border: 1px solid grey;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+img {
+    max-width: 50px;
+    max-height: 60px;
+}
+
+textarea {
+   min-width: 600px;
+   max-height: 60px;
+   font-size: 15px;
+}
+
+.icons-item {
+    width: 30px;
+    height: 50px;
+}
