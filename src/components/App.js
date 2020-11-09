@@ -17,7 +17,8 @@ export default class App extends Component {
         };
         this.deleteItem = this.deleteItem.bind(this);
         this.onToogleKilled = this.onToogleKilled.bind(this);
-
+        this.onToogleBelieve = this.onToogleBelieve.bind(this);
+        this.onToogleDontBelieve = this.onToogleDontBelieve.bind(this);
     }
 
     deleteItem(id) {
@@ -31,13 +32,49 @@ export default class App extends Component {
         });
     }
 
-    onToogleKilled(id) {
+    onToogleKilled(id, action) {
         this.setState(({data}) => {
             const index = data.findIndex(item => item.id === id);
             console.log(index)
 
             const oldData = data[index];
-            const updateItem = {...oldData, killed: !oldData.killed};
+            const updateItem = {...oldData, killed: `!oldData.${action}`};
+
+            const before = data.slice(0, index);
+            const after = data.slice(index + 1);
+            const newData = [...before, updateItem, ...after];
+
+            return {
+                data: newData
+            };
+
+        });
+    }
+
+    onToogleBelieve(id) {
+        this.setState(({data}) => {
+            const index = data.findIndex(item => item.id === id);
+
+            const oldData = data[index];
+            const updateItem = {...oldData, believe: !oldData.believe};
+
+            const before = data.slice(0, index);
+            const after = data.slice(index + 1);
+            const newData = [...before, updateItem, ...after];
+
+            return {
+                data: newData
+            };
+
+        });
+    }
+
+    onToogleDontBelieve(id) {
+        this.setState(({data}) => {
+            const index = data.findIndex(item => item.id === id);
+
+            const oldData = data[index];
+            const updateItem = {...oldData, dontBelive: !oldData.dontBelive};
 
             const before = data.slice(0, index);
             const after = data.slice(index + 1);
@@ -59,6 +96,8 @@ export default class App extends Component {
                         peoples={this.state.data}
                         onDelete={this.deleteItem}
                         onKilled={this.onToogleKilled}
+                        onBelieve={this.onToogleBelieve}
+                        onDontBelieve={this.onToogleDontBelieve}
                     />
                     <Footer />
                 </Container>
