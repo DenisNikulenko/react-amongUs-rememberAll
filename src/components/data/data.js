@@ -16,15 +16,15 @@ const data = [
     {src: black, alt: "black", killed: false, believe: false, dontBelive: false, id: 1},
     {src: white, alt: "white", killed: false, believe: false, dontBelive: false, id: 2},
     {src: blue, alt: "blue", killed: false, believe: false, dontBelive: false, id: 3},
-    {src: brown, alt:"brown", killed: false, believe: false, dontBelive: false, id: 4},
+    {src: brown, alt: "brown", killed: false, believe: false, dontBelive: false, id: 4},
     {src: green, alt:"green", killed: false, believe: false, dontBelive: false, id: 5},
     {src: lightGreen, alt:"lightGreen", killed: false, believe: false, dontBelive: false, id: 6},
-    {src: orange, alt:"orange", killed: false, believe: false, dontBelive: false, id: 7},
-    {src: pink, alt:"pink", killed: false, believe: false, dontBelive: false, id: 8},
-    {src: purple, alt:"purple", killed: false, believe: false, dontBelive: false, id: 9},
-    {src: red, alt:"red", killed: false, believe: false, dontBelive: false, id: 10},
-    {src: turquoise, alt:"turquoise", killed: false, believe: false, dontBelive: false, id: 11},
-    {src: yellow, alt:"yellow", killed: false, believe: false, dontBelive: false, id: 12}
+    {src: orange, alt: "orange", killed: false, believe: false, dontBelive: false, id: 7},
+    {src: pink, alt: "pink", killed: false, believe: false, dontBelive: false, id: 8},
+    {src: purple, alt: "purple", killed: false, believe: false, dontBelive: false, id: 9},
+    {src: red, alt: "red", killed: false, believe: false, dontBelive: false, id: 10},
+    {src: turquoise, alt: "turquoise", killed: false, believe: false, dontBelive: false, id: 11},
+    {src: yellow, alt: "yellow", killed: false, believe: false, dontBelive: false, id: 12}
 ]
 
 

@@ -90,17 +90,17 @@ export default class App extends Component {
     render(){
         return(
             <div className="app">
-                <Container>
                     <Header />
-                    <Main
-                        peoples={this.state.data}
-                        onDelete={this.deleteItem}
-                        onKilled={this.onToogleKilled}
-                        onBelieve={this.onToogleBelieve}
-                        onDontBelieve={this.onToogleDontBelieve}
-                    />
+                    <Container>
+                        <Main
+                            peoples={this.state.data}
+                            onDelete={this.deleteItem}
+                            onKilled={this.onToogleKilled}
+                            onBelieve={this.onToogleBelieve}
+                            onDontBelieve={this.onToogleDontBelieve}
+                        />
+                    </Container>
                     <Footer />
-                </Container>
             </div>
         );
     }
