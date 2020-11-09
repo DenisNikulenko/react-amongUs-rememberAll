@@ -11,7 +11,7 @@ export default class Header extends Component {
     render(){
         return(
             <div className="header">
-                <h1>Among Us</h1>
+                <h1>Among Us Вычислить убийцу:</h1>
             </div>
         );
     }

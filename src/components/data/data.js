@@ -12,22 +12,20 @@ import turquoise from "../image/turquoise.png";
 import yellow from "../image/yellow.png";
 
 
-const data = {
-    peoples: [
-        {src: black, alt: "black", id: 1},
-        {src: white, alt: "white", id: 2},
-        {src: blue, alt: "blue", id:3},
-        {src: brown, alt:"brown", id:4},
-        {src: green, alt:"green", id:5},
-        {src: lightGreen, alt:"lightGreen", id:6},
-        {src: orange, alt:"orange", id:7},
-        {src: pink, alt:"pink", id:8},
-        {src: purple, alt:"purple", id:9},
-        {src: red, alt:"red", id:10},
-        {src: turquoise, alt:"turquoise", id:11},
-        {src: yellow, alt:"yellow", id:12}
-    ]
-};
+const data = [
+    {src: black, alt: "black", killed:false, id: 1},
+    {src: white, alt: "white", killed:false, id: 2},
+    {src: blue, alt: "blue", killed:false, id:3},
+    {src: brown, alt:"brown", killed:false, id:4},
+    {src: green, alt:"green", killed:false, id:5},
+    {src: lightGreen, alt:"lightGreen", killed:false, id:6},
+    {src: orange, alt:"orange", killed:false, id:7},
+    {src: pink, alt:"pink", killed:false, id:8},
+    {src: purple, alt:"purple", killed:false, id:9},
+    {src: red, alt:"red", killed:false, id:10},
+    {src: turquoise, alt:"turquoise", killed:false, id:11},
+    {src: yellow, alt:"yellow", killed:false, id:12}
+]
 
 
 export default data;

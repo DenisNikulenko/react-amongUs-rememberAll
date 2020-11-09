@@ -13,36 +13,56 @@ export default class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: data.peoples,
-            killed: false
+            data,
         };
-        this.deleteItem = this.deleteItem.bind(this)
+        this.deleteItem = this.deleteItem.bind(this);
+        this.onToogleKilled = this.onToogleKilled.bind(this);
+
     }
 
     deleteItem(id) {
         this.setState(({data})=> {
-            console.log(this.state.data)
             const index = data.findIndex(item => item.id === id);
             const newData = [...data.slice(0, index), ...data.slice(index + 1)];
+
             return {
                 data: newData
             }
         });
-        
+    }
+
+    onToogleKilled(id) {
+        this.setState(({data}) => {
+            const index = data.findIndex(item => item.id === id);
+            console.log(index)
+
+            const oldData = data[index];
+            const updateItem = {...oldData, killed: !oldData.killed};
+
+            const before = data.slice(0, index);
+            const after = data.slice(index + 1);
+            const newData = [...before, updateItem, ...after];
+
+            return {
+                data: newData
+            };
+
+        });
     }
 
     render(){
         return(
-            
             <div className="app">
                 <Container>
                     <Header />
-                    <Main peoples={this.state.data} onDelete={this.deleteItem}/>
+                    <Main
+                        peoples={this.state.data}
+                        onDelete={this.deleteItem}
+                        onKilled={this.onToogleKilled}
+                    />
                     <Footer />
                 </Container>
             </div>
         );
-
     }
-
 };
