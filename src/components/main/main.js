@@ -20,7 +20,7 @@ const Main = ({peoples, onDelete}) => {
     return(
         <div className="main">
             <div className="container-peoples">
-                {ItemPeople}
+                {ItemPeople} 
             </div>
         </div>
     );
