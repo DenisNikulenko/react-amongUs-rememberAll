@@ -1,2 +1,1 @@
-
-![test](https://imgur.com/o8oCTvC)
+![test](./public/background/among_us.jpg)
