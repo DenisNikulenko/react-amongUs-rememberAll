@@ -6,7 +6,9 @@
     color: white;
 }
 
-.states {
+.info-counter {
+    display: flex;
+    flex-direction: column;
     padding-left: 15px;
     color: black;
     font-style: 16px;

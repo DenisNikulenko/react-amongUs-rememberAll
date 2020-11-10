@@ -26,7 +26,11 @@ const ItemsPeople = ({peoples, btns, onToogleAction}) => {
             
             return(
                 <div className="action-player" key={key}>
-                    <btn.name alt={alt} className="icons-item" onClick={() => onToogleAction(id, action)} />
+                    <btn.name
+                        alt={alt}
+                        className="icons-item"
+                        onClick={() => onToogleAction(id, action)} 
+                        />
                     <span className="killed-palyer-title">{description}</span>
                 </div>
             )
@@ -43,7 +47,7 @@ const ItemsPeople = ({peoples, btns, onToogleAction}) => {
 
     return(
         <>
-        {people}
+            {people}
         </>
     );
 }

@@ -9,6 +9,8 @@ import data from "./data/data"
 
 import './App.css';
 
+
+
 export default class App extends Component {
     constructor(props) {
         super(props);
@@ -35,33 +37,48 @@ export default class App extends Component {
                 return {
                     players: newData
                 }
-            } else if (action === "killed") {
+            }
+            if (action === "killed") {
                 updateItem = {...oldData, killed: !oldData.killed};
                 newData = [...before, updateItem, ...after];
                 return {
                     players: newData
                 }
-            } else if (action === "believe") {
+            }
+            if (action === "believe") {
                 updateItem = {...oldData, believe: !oldData.believe};
                 newData = [...before, updateItem, ...after];
                 return {
                     players: newData
                 }
-            } else if (action === "dontBelieve") {
+            }
+            if (action === "dontBelieve") {
                 updateItem = {...oldData, dontBelive: !oldData.dontBelive};
                 newData = [...before, updateItem, ...after];
                 return {
                     players: newData
                 }
             };
+
     })}
 
     render(){
-        const allPlayers = this.state.players.length
+        const counterPlayers = this.state.players.length
+        const counterKilled = this.state.players.filter(item => item.killed).length;
+        const counterBelieve = this.state.players.filter(item => item.believe).length;
+        const counterDontBellieve = this.state.players.filter(item => item.dontBelive).length;
+
+        const counterStats = {
+            counterPlayers, 
+            counterKilled,
+            counterBelieve,
+            counterDontBellieve,
+        }
+
         return(
             <div className="app">
                 <Header
-                    allPlayers={allPlayers}
+                    counterStats={counterStats}
                 />
                 <Container>
                     <Main

@@ -20,6 +20,10 @@ class Test extends Component {
                     this.state.bgColor === "red") {
                 styles.color = "white"
             }
+            if(this.state.bgColor === "none") {
+                styles.backgroundColor = "white";
+                styles.color = "black"
+            }
             styles.backgroundColor = this.state.bgColor;
         }
 
