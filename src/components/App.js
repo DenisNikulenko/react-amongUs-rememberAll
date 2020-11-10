@@ -15,14 +15,8 @@ export default class App extends Component {
         this.state = {
             players: data.players,
             btns: data.btns,
-            test:false
-
         };
         this.onToogleAction = this.onToogleAction.bind(this);
-    }
-
-    onDeleteClass() {
-        this.setState(({test:!test}))
     }
 
     onToogleAction(id, action,) {

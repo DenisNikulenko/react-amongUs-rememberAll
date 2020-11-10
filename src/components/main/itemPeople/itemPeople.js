@@ -9,7 +9,6 @@ const ItemsPeople = ({peoples, btns, onToogleAction}) => {
         let classNemes = "item-people";
 
         if (killed) {
-            classNemes.remove("believe", "dontBelive");
             classNemes = "item-people killed";
             console.log(classNemes.length)
         };

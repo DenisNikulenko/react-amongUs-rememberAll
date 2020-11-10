@@ -15,6 +15,11 @@ class Test extends Component {
     render() {
         let styles = {};
         if (this.state.bgColor) {
+            if (this.state.bgColor === "blue" || this.state.bgColor === "black" || this.state.bgColor === "green" || 
+                this.state.bgColor === "brown" || this.state.bgColor === "purple" || 
+                    this.state.bgColor === "red") {
+                styles.color = "white"
+            }
             styles.backgroundColor = this.state.bgColor;
         }
 
