@@ -25,11 +25,18 @@
      }
 
      .icons-item {
-         
         opacity: 1;
         width: 30px;
         height: 45px;
+        &:hover{
+            border-radius: 20px;
+            background: white;
+            opacity: 0.6;
+            // color: grey;
+        }
     }
+
+    
 
     .action-player {
         align-items: center;

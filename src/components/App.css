@@ -1,10 +1,12 @@
 html,body {
   height: 100%;
+  overflow:  hidden
 }
 
 .App {
   position: relative;
   min-height: 100%;
+ 
 }
 
 .main {
@@ -18,7 +20,8 @@ html,body {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-  height: 50px;
+  height: 40px;
   background: #0F0E1C;
   opacity: 0.2;
+  margin: 10px;
 }

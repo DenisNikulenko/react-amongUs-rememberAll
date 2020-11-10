@@ -1,4 +1,18 @@
 .header {
+    margin: 10px 40px;
+    display: flex;
+    justify-content: space-between;
     font-family: Snell Roundhand, cursive;
     color: white;
+}
+
+.states {
+    padding-left: 15px;
+    color: black;
+    font-style: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+    opacity: 0.8;
+    width: 150px;
+    background: white;
 }

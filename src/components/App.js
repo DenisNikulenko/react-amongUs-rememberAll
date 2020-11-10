@@ -56,9 +56,12 @@ export default class App extends Component {
     })}
 
     render(){
+        const allPlayers = this.state.players.length
         return(
             <div className="app">
-                <Header />
+                <Header
+                    allPlayers={allPlayers}
+                />
                 <Container>
                     <Main
                         peoples={this.state.players}

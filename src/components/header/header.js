@@ -1,18 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './header.scss';
 
-export default class Header extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-
-        }
-    }
-    render(){
-        return(
-            <div className="header">
-                <h1>Among Us Вычислить убийцу:</h1>
+const Header = ({allPlayers}) => {
+    
+    return(
+        <div className="header">
+            <h1>Among Us Вычислить убийцу:</h1>
+            <div className="states">
+                <span>Игроков: {allPlayers} </span>
             </div>
-        );
-    }
+        </div>
+    );
+
 }
+
+export default Header;
