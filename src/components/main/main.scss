@@ -53,7 +53,17 @@
 }
 
 .killed {
-    background: red;
+    opacity: 0.7;
+    background: black;
+    color: white;
+    textarea {
+        opacity: 0.2;
+    }
+    .icons-item{
+        &:hover{
+            background: black;
+        }
+    }
 }
 
 .believe {
@@ -61,7 +71,8 @@
 }
 
 .dontBelive {
-    background: yellow;
+    background: red;
+    
 }
 
 

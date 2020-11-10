@@ -14,15 +14,22 @@ export default class App extends Component {
         super(props);
         this.state = {
             players: data.players,
-            btns: data.btns
+            btns: data.btns,
+            test:false
+
         };
         this.onToogleAction = this.onToogleAction.bind(this);
     }
 
-    onToogleAction(id, action) {
+    onDeleteClass() {
+        this.setState(({test:!test}))
+    }
+
+    onToogleAction(id, action,) {
         this.setState(({players}) => {
             let updateItem;
             let newData;
+
             const index = players.findIndex(item => item.id === id);
 
             const oldData = players[index];
