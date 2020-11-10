@@ -82,6 +82,7 @@ export default class App extends Component {
                 />
                 <Container>
                     <Main
+                        counterStats={counterStats}
                         peoples={this.state.players}
                         btns={this.state.btns}
                         onToogleAction={this.onToogleAction}
