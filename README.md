@@ -1,1 +1,1 @@
-![test](./readme.png)
+![image](./components/image/readme.png)
