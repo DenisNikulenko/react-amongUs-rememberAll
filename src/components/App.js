@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import "bootstrap/dist/css/bootstrap.min.css"
+
 import {Container} from 'react-bootstrap'
+import "bootstrap/dist/css/bootstrap.min.css"
 
 import Header from "./header";
 import Main from "./main";
 import Footer from "./footer";
 import data from "./data/data"
 
-import './App.css';
+import './App.scss';
 
 
 

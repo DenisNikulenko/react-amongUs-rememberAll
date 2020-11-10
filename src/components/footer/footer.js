@@ -1,7 +1,8 @@
 import React from 'react';
-import "./footer.scss"
+
 import {AiOutlineInstagram} from "react-icons/ai";
 
+import "./footer.scss"
 
 const Footer = props => {
     return(

@@ -1,30 +1,26 @@
 import React from 'react';
 
 const ItemsPeople = ({peoples, btns, onToogleAction}) => {
-    
     const people = peoples.map(item => {
-        
         const {id, killed, believe, dontBelive} = item;
-    
         let classNemes = "item-people";
 
         if (killed) {
-            classNemes = "item-people killed";
-            console.log(classNemes.length)
+            classNemes += " killed";
         };
 
         if (believe) {
-            classNemes = "item-people believe";
+            classNemes += " believe";
         };
 
         if (dontBelive) {
-            classNemes = "item-people dontBelive";
+            classNemes += " dontBelive";
         };
 
         const buttons = btns.map(btn => {
             const {key, alt, action, description} = btn;  
             
-            return(
+            return (
                 <div className="action-player" key={key}>
                     <btn.name
                         alt={alt}
