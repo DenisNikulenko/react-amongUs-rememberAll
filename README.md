@@ -1,1 +1,1 @@
-![test](./public/background/among_us.jpg)
+![test](./readme.png)
