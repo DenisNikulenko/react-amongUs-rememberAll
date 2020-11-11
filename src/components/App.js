@@ -62,10 +62,12 @@ export default class App extends Component {
     })}
 
     render(){
-        const counterPlayers = this.state.players.length;
-        const counterKilled = this.state.players.filter(item => item.killed).length;
-        const counterBelieve = this.state.players.filter(item => item.believe).length;
-        const counterDontBellieve = this.state.players.filter(item => item.dontBelive).length;
+        const players = this.state.players
+
+        const counterPlayers = players.length;
+        const counterKilled = players.filter(item => item.killed).length;
+        const counterBelieve = players.filter(item => item.believe).length;
+        const counterDontBellieve = players.filter(item => item.dontBelive).length;
 
         const counterStats = {
             counterPlayers, 

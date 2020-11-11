@@ -35,7 +35,7 @@ const data = {
         {name: GiOverkill, alt: "убит", description: "Убит", action: "killed", key:"zxcv"},
         {name: AiFillLike, alt: "Доверяю", description: "Доверяю", action: "believe", key: "zxcvb"},
         {name: AiFillDislike, alt: "Не доверяю", description: "Не доверяю", action: "dontBelieve", key: "zxcvbn"},
-        {name: ListColors, alt: "Вкинул", description: "Вкинул", action: "dontBelieve", key: "zxcvbnz"},
+        {name: ListColors, alt: "Вкинул", description: "Обвиняет", action: "dontBelieve", key: "zxcvbnz"},
     ],
 }
 

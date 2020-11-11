@@ -1,5 +1,6 @@
 .info-counter {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -35,16 +36,15 @@
     }
 
     textarea {
-        margin: 5px 0;
+        margin: 5px 10px;
         border-radius: 10px;
         color: black;
         font-weight: bold;
-        min-width: 600px;
+        min-width: 400px;
         max-height: 60px;
         font-size: 15px;
         resize: none;
         opacity: 0.3;
-        
         &:focus {
             opacity: 1;
         }
