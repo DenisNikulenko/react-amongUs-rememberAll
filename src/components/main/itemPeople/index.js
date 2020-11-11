@@ -1,2 +1,2 @@
-import ItemPeople from "./itemPeople"
+import ItemPeople from "./itemPeople";
 export default ItemPeople;

@@ -37,7 +37,6 @@ const data = {
         {name: AiFillDislike, alt: "Не доверяю", description: "Не доверяю", action: "dontBelieve", key: "zxcvbn"},
         {name: ListColors, alt: "Вкинул", description: "Вкинул", action: "dontBelieve", key: "zxcvbnz"},
     ],
-
 }
 
 export default data;

@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 
-import {Container} from 'react-bootstrap'
-import "bootstrap/dist/css/bootstrap.min.css"
+import {Container} from 'react-bootstrap';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import Header from "./header";
 import Main from "./main";
 import Footer from "./footer";
-import data from "./data/data"
+import data from "./data/data";
 
 import './App.scss';
-
-
 
 export default class App extends Component {
     constructor(props) {
@@ -64,7 +62,7 @@ export default class App extends Component {
     })}
 
     render(){
-        const counterPlayers = this.state.players.length
+        const counterPlayers = this.state.players.length;
         const counterKilled = this.state.players.filter(item => item.killed).length;
         const counterBelieve = this.state.players.filter(item => item.believe).length;
         const counterDontBellieve = this.state.players.filter(item => item.dontBelive).length;
