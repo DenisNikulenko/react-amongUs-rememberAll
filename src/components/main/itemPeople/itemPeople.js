@@ -1,23 +1,24 @@
 import React from 'react';
 
 const ItemsPeople = ({peoples, btns, onToogleAction}) => {
-    const people = peoples.map(item => {
+
+    const Player = peoples.map(item => {
         const {id, killed, believe, dontBelive} = item;
         let classNemes = "item-people";
 
         if (killed) {
-            classNemes += " killed";
+            classNemes = "item-people killed";
         };
 
         if (believe) {
-            classNemes += " believe";
+            classNemes = "item-people believe";
         };
 
         if (dontBelive) {
-            classNemes += " dontBelive";
+            classNemes = "item-people dontBelive";
         };
 
-        const buttons = btns.map(btn => {
+        const Buttons = btns.map(btn => {
             const {key, alt, action, description} = btn;  
             
             return (
@@ -26,7 +27,7 @@ const ItemsPeople = ({peoples, btns, onToogleAction}) => {
                         alt={alt}
                         className="icons-item"
                         onClick={() => onToogleAction(id, action)} 
-                        />
+                        />      
                     <span className="player-button-description">{description}</span>
                 </div>
             )
@@ -36,14 +37,14 @@ const ItemsPeople = ({peoples, btns, onToogleAction}) => {
             <div className={classNemes} key={id}>
                 <img src={item.src} alt={item.alt} />
                 <textarea type="text" placeholder="Заметка..." />
-                {buttons}  
+                {Buttons}  
             </div>
         );     
     });
 
     return(
         <>
-            {people}
+            {Player}
         </>
     );
 }
