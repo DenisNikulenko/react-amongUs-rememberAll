@@ -66,8 +66,74 @@
         margin-left: 10px;
         display: flex;
         flex-direction: column;
+
         & span{
             font-size: 11px;
+        }
+
+        &:last-child {
+            display: flex;
+            flex-direction: row;
+            & span {
+               font-size: 16px; 
+            }
+        }
+
+        .list-animations-btns{
+            display: flex;
+            flex-direction: column;
+            padding-right: 5px;
+    
+            & .animation-btn {
+                display: flex;
+                justify-content: space-between;;
+    
+                span {
+                    margin: 0 5px;
+                    font-size: 12px;
+                }
+            }
+            
+            input[type=checkbox] {
+                position: relative;
+                visibility: hidden;
+                cursor: pointer;
+            }
+            
+            input[type=checkbox]:after {
+                // display: block;
+                // margin-top: 50px;
+                content: "NO";
+                position: relative;
+                top: -5px;
+                // right: -30px;
+                visibility: visible;
+                // height: 10px;
+                // line-height: 10px;
+                width: 10px;
+                font-size: 10px;
+                // text-align: center;
+                border-radius: 5px;
+                background: #d00;
+                color: white;
+                padding: 1px;
+                // border: 1px solid red;
+                // color: red;
+                // font-weight: 600;
+                cursor: pointer;
+            }
+            
+            input[type=checkbox]:checked:after {
+                // border: 1px solid white;
+                color: white;
+                content: "YES";
+                background: #0a0;
+            }
+        }
+        &:last-child .player-button-description {
+            font-size: 14px;
+            font-weight: 600;
+            transform: rotate(90deg);
         }
     }
 }

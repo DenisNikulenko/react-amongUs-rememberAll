@@ -11,6 +11,7 @@ import red from "../image/red.png";
 import turquoise from "../image/turquoise.png";
 import yellow from "../image/yellow.png";
 import ListColors from "./listColors"
+import ListAnimations from "./listAnimations"
 
 import {AiFillDelete, AiFillLike, AiFillDislike,} from "react-icons/ai";
 import {GiOverkill} from "react-icons/gi";       
@@ -36,6 +37,7 @@ const data = {
         {name: AiFillLike, alt: "Доверяю", description: "Доверяю", action: "believe", key: "zxcvb"},
         {name: AiFillDislike, alt: "Не доверяю", description: "Не доверяю", action: "dontBelieve", key: "zxcvbn"},
         {name: ListColors, alt: "Вкинул", description: "Обвиняет", action: "dontBelieve", key: "zxcvbnz"},
+        {name: ListAnimations, alt: "Анимации", description: "Анимка", action: "dontBelieve", key: "zxcvbnzx"}
     ],
 }
 

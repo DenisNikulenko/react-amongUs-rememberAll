@@ -27,7 +27,7 @@ const ItemsPeople = ({peoples, btns, onToogleAction}) => {
                         className="icons-item"
                         onClick={() => onToogleAction(id, action)} 
                         />
-                    <span className="killed-palyer-title">{description}</span>
+                    <span className="player-button-description">{description}</span>
                 </div>
             )
         })
