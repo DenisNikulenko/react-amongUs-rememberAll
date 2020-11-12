@@ -8,7 +8,9 @@ const Main = ({peoples, btns, onToogleAction, counterStats}) => {
         <div className="main">
             <div className="container-peoples">
                 <StatsCounter counterStats={counterStats} />
+                <div className="items-players">
                <ItemsPeople peoples={peoples} btns={btns} onToogleAction={onToogleAction}  /> 
+               </div>
             </div>
         </div>
     );
